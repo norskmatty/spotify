@@ -16,7 +16,8 @@ $(function () {
 	});
 
 	$('body').on('click', '.playsong', function() {
-		$('.songplayer').html("<iframe src='https://embed.spotify.com/?uri=" + $(this).attr('id') + "' height='420' width='315'>");
+		$('.songplayer').height(400);
+		$('.songplayer').html("<iframe src='https://embed.spotify.com/?uri=" + $(this).attr('id') + "' height='300' width='400'>");
 	});
 	
 })
@@ -56,20 +57,20 @@ function getTracks(albumid) {
 }
 
 function showAlbum(album) {
-	var result = "<p> Album: " + album.name + "</p>";
-	result += "<p> <img class='albumcover' album='" + album.name +"' id=" + album.id + " src='" + album.images[1].url + "'> </p>";
+	var result = "<div class='albumline'>" + album.name;
+	result += "<div class='albumimage'> <img height='150' class='albumcover' album='" + album.name +"' id=" + album.id + " src='" + album.images[1].url + "'> </div> </div>";
 	return result;
 }
 
 function albumClicked(album, id) {
-	var tracks = "<p>" + artist + "</p>";
-	tracks += "<p> Track List for " + album + "</p>";
+	var tracks = "<p class='artisttitle'>" + artist + "</p>";
+	tracks += "<p class='albumtitle'>" + album + "</p>";
 	$('.tracklist').html(tracks);
 	getTracks(id);
 	
 }
 
 function showTracks(track) {
-	var result = "<p> <img class='playsong' src='images/play.svg' id=" + track.uri + "> Track " + track.track_number + ": <a href='" + track.external_urls.spotify + "'>" + track.name + "</a> </p>" 
+	var result = "<p class='tracknum'> <img class='playsong' src='images/play.svg' id=" + track.uri + ">" + track.track_number + " - <span class='songtitle'>" + track.name + "</span> </p>" 
 	return result;
 }

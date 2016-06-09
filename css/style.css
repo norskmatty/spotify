@@ -1,24 +1,126 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.searchbar {
+	height: 170px;
+	width: 900px;
+	margin: 0 auto;
+	background-color: lightsteelblue;
+	margin-top: -40px;
+	font-family: 'Cabin', sans-serif;
+	border-bottom: solid 4px lime;
+}
+
+.searchbar p {
+	padding: 10px;
+	font-size: 38px;
+	text-align: center;
+
+}
+
+form {
+	margin-top: -30px;
+	font-family: 'Cabin', sans-serif;
+	
+}
+
+#query {
+	padding: 5px;
+	margin-left: 150px;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+#submit {
+	background-color: darkgreen;
+	box-shadow: 0 0 2px 2px green;
+	padding: 5px;
+	color: whitesmoke;
+	font-size: 16px;
+	width: 100px;
+	margin-left: 40px;
+	margin-top: -50px;
+
+}
+
 .wrapper {
 	display: flex;
+	flex-direction: column;
+	width: 900px;
+	margin: 0 auto;
 }
 
 .results {
-	order: 1;
+	order: 3;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	background-color: lightsteelblue;
+	color: black;
+	font-family: 'Cabin', sans-serif;
+
 }
 
 .tracklist {
 	order: 2;
+	background-color: lightgrey;
+	font-family: 'Cabin', sans-serif;
+	font-size: 30px;
+	border-bottom: solid 4px lime;
+}
+
+.tracklist .tracknum {
+	font-size: 18px;
+}
+
+.tracklist .artisttitle {
+	margin-left: 50px;
+	font-family: 'Indie Flower', cursive;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.tracklist .albumtitle {
+	font-size: 24px;
+	text-align: center;
+	border-bottom: solid 4px lime;
+	font-family: 'Caveat Brush', cursive;
+	padding: 15px;
+}
+
+.tracklist .songtitle {
+	font-family: 'Indie Flower', cursive;
+	margin-top: -15px;
+	font-size: 28px;
 }
 
 .songplayer {
-	order: 3;
+	order: 1;
+	width: 900px;
+	text-align: center;
+	background-color: lightsteelblue;
+	border-bottom: solid 4px lime;
+}
+
+.songplayer iframe {
+	margin-top: 30px;
 }
 
 .tracklist img {
 	height: 30px;
 	cursor: pointer;
+	margin-right: 10px;
 }
 
 .results img {
 	cursor: pointer;
+}
+
+.results .albumline {
+	width: 150px;
+	padding: 10px;
 }

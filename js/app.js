@@ -16,8 +16,8 @@ $(function () {
 	});
 
 	$('body').on('click', '.playsong', function() {
-		$('.songplayer').height(400);
-		$('.songplayer').html("<iframe src='https://embed.spotify.com/?uri=" + $(this).attr('id') + "' height='300' width='400'>");
+		$('.songplayer').height(350);
+		$('.songplayer').html("<iframe src='https://embed.spotify.com/?uri=" + $(this).attr('id') + "' height='300' width='500'>");
 	});
 	
 })

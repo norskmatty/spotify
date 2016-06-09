@@ -79,17 +79,20 @@ form {
 
 .tracklist .artisttitle {
 	margin-left: 50px;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Caveat Brush', cursive;
 	font-size: 40px;
 	font-weight: bold;
+	letter-spacing: 0.04em;
+	margin-top: 30px;
 }
 
 .tracklist .albumtitle {
-	font-size: 24px;
+	font-size: 32px;
 	text-align: center;
 	border-bottom: solid 4px lime;
-	font-family: 'Caveat Brush', cursive;
+	font-family: 'Indie Flower', cursive;
 	padding: 15px;
+	margin-top: -35px;
 }
 
 .tracklist .songtitle {

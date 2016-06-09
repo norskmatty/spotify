@@ -13,6 +13,7 @@ $(function () {
 	});
 
 	$('body').on('click', '.albumcover', function() {
+		$('#query').val('');
 		var thealbum = $(this).attr('album');
 		var albumid = $(this).attr('id');
 		albumClicked(thealbum, albumid);	

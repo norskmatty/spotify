@@ -5,6 +5,9 @@ $(function () {
 	$('#artist-search').submit(function(event) {
 		event.preventDefault();
 		$('.results').html('');
+		$('.tracklist').html('');
+		$('.songplayer').html('');
+		$('.songplayer').height(0);
 		artist = $('#query').val();
 		getRequest(artist);
 	});
